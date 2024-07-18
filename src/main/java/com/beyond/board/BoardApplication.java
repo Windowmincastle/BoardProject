@@ -10,4 +10,6 @@ public class BoardApplication {
 		SpringApplication.run(BoardApplication.class, args);
 	}
 
+	// author , post , common
+	// controller , domain, dto, repository, service
 }

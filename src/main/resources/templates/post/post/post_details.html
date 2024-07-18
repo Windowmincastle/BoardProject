@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Service</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        async function serverData(){
+                console.log("hello world");
+                const postId = document.getElementById("postId").value;
+                console.log(postId);
+                const res = await axios.get("https://jsonplaceholder.typicode.com/posts/"+postId)
+                console.log(res.data);
+    
+    
+                document.getElementById("userId").innerHTML = res.data.userId;
+                document.getElementById("id").innerHTML = res.data.id;
+                document.getElementById("title").innerHTML = res.data.title;
+                document.getElementById("body").innerHTML = res.data.body;
+    
+        }
+    </script>
+</head>
+
+<body> 
+    <object data="header.html" type="text/html" style="width:100%"></object>
+
+    <!-- container : 부트스트랩의 컨테이너 클래스는 페이지의 내용을
+    중앙에 정렬하고 양쪽에 패딩을 추가하고 내용을 감싸는 역할-->
+    <div class="container" style="text-align: center;">
+        <div class="page-header"><h3>🖥️게시글 조회</h3></div>
+        <!-- <div class="float-end"><button class="btn btn-secondary">글쓰기</button></div> -->
+        
+        
+        <div class="float-end">
+            <!-- <form action="" method="get"> -->
+            <input id="postId" type="text">
+            <button class="btn btn-secondary" onclick="serverData()">검색</button>
+            <!-- </form> -->
+        </div>
+         
+        <table class="table" style="padding-top: 50px;">
+            <tbody>
+                <tr>
+                    <td>userId</td>
+                    <td id="userId"></td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td id="id"></td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td id="title"></td>
+                </tr>
+                <tr>
+                    <td>body</td>
+                    <td id="body"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>
+
