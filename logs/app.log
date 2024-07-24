@@ -4787,3 +4787,493 @@ java.lang.IllegalArgumentException: 본인의 게시글만 삭제할 수 있습�
 13:43 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
 13:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
 13:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+14:06 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 21976 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+14:06 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+14:06 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:06 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 122 ms. Found 2 JPA repository interfaces.
+14:06 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+14:06 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+14:06 o.a.catalina.core.StandardService-Starting service [Tomcat]
+14:06 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+14:06 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+14:06 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 4714 ms
+14:06 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+14:06 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+14:06 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+14:06 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+14:06 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:06 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+14:06 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:06 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:06 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bd6638, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c552f08, org.springframework.security.web.context.SecurityContextPersistenceFilter@152d2a58, org.springframework.security.web.header.HeaderWriterFilter@5c0d3715, org.springframework.security.web.authentication.logout.LogoutFilter@4fe3f9ef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@51f009ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12478b4e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64921450, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fd00e10, org.springframework.security.web.session.SessionManagementFilter@31de8099, org.springframework.security.web.access.ExceptionTranslationFilter@2119b989, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e9ed4df]
+14:06 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:06 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+14:06 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+14:06 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+14:06 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+14:06 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+14:06 com.beyond.board.BoardApplication-Started BoardApplication in 11.867 seconds (JVM running for 12.727)
+14:06 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+14:07 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:07 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+14:07 o.s.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+14:08 o.a.c.util.SessionIdGeneratorBase-Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [3,085] milliseconds.
+14:35 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+14:35 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+14:35 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:05 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 15848 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:05 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 238 ms. Found 2 JPA repository interfaces.
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:05 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:05 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+16:05 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'sessionRepository' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=sessionRepository; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]] for bean 'sessionRepository': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration; factoryMethodName=sessionRepository; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration] bound.
+16:05 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 13752 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:05 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 241 ms. Found 2 JPA repository interfaces.
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:05 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:05 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:05 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+16:05 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'sessionRepository' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=sessionRepository; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]] for bean 'sessionRepository': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration; factoryMethodName=sessionRepository; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration] bound.
+16:05 o.s.b.a.l.ConditionEvaluationReportLoggingListener-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:05 o.s.b.d.LoggingFailureAnalysisReporter-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'sessionRepository', defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class], could not be registered. A bean with that name has already been defined in org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+16:06 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 15624 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:06 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 197 ms. Found 2 JPA repository interfaces.
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:06 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:06 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:06 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+16:06 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'sessionRepository' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=sessionRepository; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]] for bean 'sessionRepository': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration; factoryMethodName=sessionRepository; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration] bound.
+16:06 o.s.b.a.l.ConditionEvaluationReportLoggingListener-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:06 o.s.b.d.LoggingFailureAnalysisReporter-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'sessionRepository', defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class], could not be registered. A bean with that name has already been defined in org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+16:07 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 2432 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:07 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:07 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:07 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:07 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 207 ms. Found 2 JPA repository interfaces.
+16:07 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:07 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:07 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:07 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:07 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+16:07 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'sessionRepository' defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration; factoryMethodName=sessionRepository; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]] for bean 'sessionRepository': There is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration; factoryMethodName=sessionRepository; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration] bound.
+16:07 o.s.b.a.l.ConditionEvaluationReportLoggingListener-
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:07 o.s.b.d.LoggingFailureAnalysisReporter-
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'sessionRepository', defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class], could not be registered. A bean with that name has already been defined in org.springframework.session.data.redis.config.annotation.web.server.RedisWebSessionConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+16:08 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 11628 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:08 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 263 ms. Found 2 JPA repository interfaces.
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:08 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:08 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:08 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+16:08 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:08 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:08 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:08 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:08 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:08 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3355 ms
+16:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:08 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:08 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:08 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:08 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:08 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:08 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:08 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77f95e19, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4607cbe2, org.springframework.security.web.context.SecurityContextPersistenceFilter@1002c49e, org.springframework.security.web.header.HeaderWriterFilter@3ce4eb42, org.springframework.security.web.authentication.logout.LogoutFilter@51d6c42d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3feb93a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21a462ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37e28b20, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ff40324, org.springframework.security.web.session.SessionManagementFilter@3054cdd3, org.springframework.security.web.access.ExceptionTranslationFilter@6a3c1b56, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39ee07a9]
+16:08 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:08 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:08 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:08 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:08 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:08 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:08 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:08 com.beyond.board.BoardApplication-Started BoardApplication in 9.386 seconds (JVM running for 9.941)
+16:08 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:14 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:14 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:14 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+16:19 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:19 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:19 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:19 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 15744 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:19 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:19 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:19 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:19 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 226 ms. Found 2 JPA repository interfaces.
+16:19 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:19 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:19 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:19 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:19 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+16:19 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:19 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:19 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:19 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:19 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:19 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3237 ms
+16:19 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:19 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:19 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:19 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:19 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:19 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:19 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:19 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:19 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20040c6e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cbea0df, org.springframework.security.web.context.SecurityContextPersistenceFilter@40e7aea9, org.springframework.security.web.header.HeaderWriterFilter@62eb918, org.springframework.security.web.authentication.logout.LogoutFilter@29f86630, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4607cbe2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46e38c28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c7f8c25, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@396f3bf2, org.springframework.security.web.session.SessionManagementFilter@37e28b20, org.springframework.security.web.access.ExceptionTranslationFilter@6eff05e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a9a6a0c]
+16:19 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:19 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:19 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:19 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:19 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:19 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:19 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:19 com.beyond.board.BoardApplication-Started BoardApplication in 8.675 seconds (JVM running for 9.264)
+16:19 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:19 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:19 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:19 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+16:22 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:22 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:22 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:22 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 18756 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:22 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:22 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:22 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:22 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 182 ms. Found 2 JPA repository interfaces.
+16:22 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:22 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:22 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:22 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:22 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+16:22 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:22 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:22 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:22 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:22 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:22 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3252 ms
+16:22 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:22 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:22 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:22 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:22 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:22 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:22 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:22 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:22 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18c432ed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@206de1f, org.springframework.security.web.context.SecurityContextPersistenceFilter@19877453, org.springframework.security.web.header.HeaderWriterFilter@5d50e7f6, org.springframework.security.web.authentication.logout.LogoutFilter@63ff861e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@797ca322, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18174bd9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b8b5d9e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fae357f, org.springframework.security.web.session.SessionManagementFilter@48e3017a, org.springframework.security.web.access.ExceptionTranslationFilter@74ed1d35, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6da86e98]
+16:22 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:22 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:22 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:22 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:22 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:22 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:22 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:22 com.beyond.board.BoardApplication-Started BoardApplication in 8.61 seconds (JVM running for 9.221)
+16:22 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:22 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:22 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:22 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+16:23 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:23 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 11068 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:23 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:23 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:23 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:23 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 244 ms. Found 2 JPA repository interfaces.
+16:23 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:23 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:23 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:23 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:23 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+16:23 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:23 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:23 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:23 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:23 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:23 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3263 ms
+16:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:23 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:23 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:23 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:23 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:23 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:23 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:23 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3cd758be, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@562ec518, org.springframework.security.web.context.SecurityContextPersistenceFilter@2cbae0f1, org.springframework.security.web.header.HeaderWriterFilter@7a25f8ee, org.springframework.security.web.authentication.logout.LogoutFilter@649a6d88, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5fa3df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d8cece4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55d98bbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c8d685e, org.springframework.security.web.session.SessionManagementFilter@673e1cf2, org.springframework.security.web.access.ExceptionTranslationFilter@1dc28c66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ded31cc]
+16:24 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:24 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:24 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:24 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:24 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:24 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:24 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:24 com.beyond.board.BoardApplication-Started BoardApplication in 8.862 seconds (JVM running for 9.418)
+16:24 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:27 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:27 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:27 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:27 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 20912 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:27 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:27 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:27 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:27 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 202 ms. Found 2 JPA repository interfaces.
+16:27 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:27 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:27 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:27 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:27 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+16:27 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:27 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:27 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:27 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:27 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:27 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3272 ms
+16:27 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:27 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:27 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:27 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:27 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:27 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:27 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:27 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:27 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@20040c6e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cbea0df, org.springframework.security.web.context.SecurityContextPersistenceFilter@40e7aea9, org.springframework.security.web.header.HeaderWriterFilter@62eb918, org.springframework.security.web.authentication.logout.LogoutFilter@29f86630, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4607cbe2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46e38c28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c7f8c25, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@396f3bf2, org.springframework.security.web.session.SessionManagementFilter@37e28b20, org.springframework.security.web.access.ExceptionTranslationFilter@6eff05e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6a9a6a0c]
+16:27 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:27 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:27 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:27 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:27 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:27 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:27 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:27 com.beyond.board.BoardApplication-Started BoardApplication in 9.134 seconds (JVM running for 9.708)
+16:27 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:28 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:28 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:28 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+16:28 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:28 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:28 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:29 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 12204 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:29 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 187 ms. Found 2 JPA repository interfaces.
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:29 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:29 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+16:29 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:29 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:29 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:29 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:29 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:29 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3132 ms
+16:29 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:29 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:29 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:29 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:29 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:29 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:29 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:29 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:29 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a827b0c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39ee07a9, org.springframework.security.web.context.SecurityContextPersistenceFilter@25134e01, org.springframework.security.web.header.HeaderWriterFilter@52737c1, org.springframework.security.web.authentication.logout.LogoutFilter@6b3d3e57, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d94c50e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a3c1b56, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b8ce72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cff38ff, org.springframework.security.web.session.SessionManagementFilter@649a6d88, org.springframework.security.web.access.ExceptionTranslationFilter@48e3017a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3fae357f]
+16:29 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:29 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:29 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:29 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:29 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:29 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:29 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:29 com.beyond.board.BoardApplication-Started BoardApplication in 8.268 seconds (JVM running for 8.938)
+16:29 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:29 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:29 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:29 o.s.web.servlet.DispatcherServlet-Completed initialization in 3 ms
+16:29 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:29 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:29 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:29 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 10976 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:29 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 221 ms. Found 2 JPA repository interfaces.
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:29 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:29 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:29 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+16:29 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:29 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:29 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:29 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:29 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:29 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3255 ms
+16:29 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:29 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:29 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:29 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:29 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:29 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:29 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:29 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:30 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3cd758be, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@562ec518, org.springframework.security.web.context.SecurityContextPersistenceFilter@2cbae0f1, org.springframework.security.web.header.HeaderWriterFilter@7a25f8ee, org.springframework.security.web.authentication.logout.LogoutFilter@649a6d88, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5fa3df, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d8cece4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55d98bbb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c8d685e, org.springframework.security.web.session.SessionManagementFilter@673e1cf2, org.springframework.security.web.access.ExceptionTranslationFilter@1dc28c66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ded31cc]
+16:30 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:30 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:30 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:30 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:30 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:30 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:30 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:30 com.beyond.board.BoardApplication-Started BoardApplication in 8.712 seconds (JVM running for 9.261)
+16:30 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:30 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:30 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:30 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+16:38 i.l.core.protocol.ConnectionWatchdog-Reconnecting, last destination was localhost/127.0.0.1:6379
+16:38 i.l.core.protocol.ConnectionWatchdog-Reconnecting, last destination was localhost/127.0.0.1:6379
+16:38 i.l.core.protocol.ConnectionWatchdog-Cannot reconnect to [localhost:6379]: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:38 i.l.core.protocol.ConnectionWatchdog-Cannot reconnect to [localhost:6379]: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+java.io.IOException: 현재 연결은 사용자의 호스트 시스템의 소프트웨어의 의해 중단되었습니다
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+16:38 i.l.c.protocol.ReconnectionHandler-Reconnected to localhost:6379
+16:38 i.l.c.protocol.ReconnectionHandler-Reconnected to localhost:6379
+16:40 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+16:40 com.beyond.board.BoardApplication-Starting BoardApplication using Java 11.0.22 on LAPTOP-C67PUDO7 with PID 3576 (C:\Users\Playdata\Desktop\미니프로젝트\board\out\production\classes started by Playdata in C:\Users\Playdata\Desktop\미니프로젝트\board)
+16:40 com.beyond.board.BoardApplication-The following 1 profile is active: "dev"
+16:40 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:40 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:40 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 197 ms. Found 2 JPA repository interfaces.
+16:40 o.s.d.r.c.RepositoryConfigurationDelegate-Multiple Spring Data modules found, entering strict repository configuration mode
+16:40 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+16:40 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.author.repository.AuthorRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:40 o.s.d.r.c.RepositoryConfigurationExtensionSupport-Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.beyond.board.post.repository.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+16:40 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+16:40 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+16:40 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+16:40 o.a.catalina.core.StandardService-Starting service [Tomcat]
+16:40 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+16:40 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+16:40 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 3225 ms
+16:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+16:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+16:40 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+16:40 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+16:40 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:40 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+16:40 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:40 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:40 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b1a3125, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4199761d, org.springframework.security.web.context.SecurityContextPersistenceFilter@673e1cf2, org.springframework.security.web.header.HeaderWriterFilter@2dc72c0c, org.springframework.security.web.authentication.logout.LogoutFilter@9e092b5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ded31cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72155315, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cbae0f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ca564aa, org.springframework.security.web.session.SessionManagementFilter@7f97e963, org.springframework.security.web.access.ExceptionTranslationFilter@2738a1fc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73db1a6]
+16:40 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:40 o.s.b.a.batch.JpaBatchConfigurer-JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+16:40 o.s.b.c.r.s.JobRepositoryFactoryBean-No database type set, using meta data indicating: MYSQL
+16:40 o.s.b.c.l.support.SimpleJobLauncher-No TaskExecutor has been set, defaulting to synchronous executor.
+16:40 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+16:40 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+16:40 o.s.s.a.ScheduledAnnotationBeanPostProcessor-No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+16:40 com.beyond.board.BoardApplication-Started BoardApplication in 8.427 seconds (JVM running for 8.979)
+16:40 o.s.b.a.b.JobLauncherApplicationRunner-Running default command line with: []
+16:40 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:40 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+16:40 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+16:42 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+16:42 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+16:42 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.

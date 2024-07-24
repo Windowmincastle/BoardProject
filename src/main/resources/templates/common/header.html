@@ -15,7 +15,7 @@
             <a href="/" class="navbar-brand mx-auto position-absolute start-50 translate-middle-x"> 게시판 </a>
             <ul class="navbar-nav ms-auto">
 
-                <li class="nav-item">
+                <li sec:authorize="hasRole('ROLE_ADMIN')" class="nav-item">
                     <a href="/author/list" class="nav-link" style="color:orange"> 회원 목록</a>
                 </li>
 
