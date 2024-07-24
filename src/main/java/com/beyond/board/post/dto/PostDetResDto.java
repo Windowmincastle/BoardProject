@@ -1,8 +1,6 @@
 package com.beyond.board.post.dto;
 
 
-import com.beyond.board.post.domain.Post;
-import com.beyond.board.post.repository.PostRepository;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -14,14 +12,13 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class PostDetailDto {
+public class PostDetResDto {
 
     private Long id;
     private String title;
     private String contents;
-    private String author_emai;
+    private String author_email;
     private LocalDateTime createdTime;
     private LocalDateTime updatedTime;
-
 
 }

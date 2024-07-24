@@ -3,6 +3,7 @@ package com.beyond.board.author.domain;
 
 import com.beyond.board.author.dto.AuthorDetailDto;
 import com.beyond.board.author.dto.AuthorListResDto;
+import com.beyond.board.author.dto.AuthorUpdateReqDto;
 import com.beyond.board.common.BaseTimeEntity;
 import com.beyond.board.post.domain.Post;
 import lombok.*;
@@ -34,7 +35,7 @@ public class Author extends BaseTimeEntity{
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
-    @OneToMany(mappedBy = "author") // 일대다
+    @OneToMany(mappedBy = "author", cascade = CascadeType.ALL) // cascadetype 해야 FK 삭제 가능
     private List<Post> posts;
 
 
@@ -82,6 +83,11 @@ public class Author extends BaseTimeEntity{
         return authorDetailDto;
     }
 
+
+    public void updateAuthor(AuthorUpdateReqDto authorUpdateReqDto) {
+        this.name = authorUpdateReqDto.getName();
+        this.password = authorUpdateReqDto.getPassword();
+    }
 
 
 

@@ -5,8 +5,10 @@ import com.beyond.board.author.domain.Author;
 import com.beyond.board.author.dto.AuthorDetailDto;
 import com.beyond.board.author.dto.AuthorSaveReqDto;
 import com.beyond.board.author.dto.AuthorListResDto;
+import com.beyond.board.author.dto.AuthorUpdateReqDto;
 import com.beyond.board.author.repository.AuthorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,14 +22,16 @@ import java.util.Optional;
 // 조회 작업 시 readOnly 설정하면 성능이 향상.
 // 다만 저장 작업시에는 Transactional을 메서드 단위로 달아줘야한다. 아니면 조회 위에다가 따로 readonly만 붙이던지
 // 선택적으로 가져가겟ㄷ.
-@Transactional
+@Transactional(readOnly = true)
 @Service
 public class AuthorService {
 
     private final AuthorRepository authorRepository;
+    private final PasswordEncoder passwordEncoder;
     @Autowired // 싱글톤 객체를 주입(DI -> 디펜젼시 인젝션)
-    public AuthorService(AuthorRepository authorRepository){
+    public AuthorService(AuthorRepository authorRepository, PasswordEncoder passwordEncoder){
         this.authorRepository = authorRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
     public Author authorCreate(AuthorSaveReqDto requestDto) {
@@ -37,7 +41,13 @@ public class AuthorService {
             throw new IllegalArgumentException("이미 존재하는 Email 입니다");
         }
 
-        Author savedAuthor = requestDto.toEntity();
+        if (requestDto.getPassword().length() < 8){
+            throw new IllegalArgumentException("password is too short");
+        }
+
+        Author savedAuthor
+                = requestDto.toEntity(passwordEncoder.encode(requestDto.getPassword()));
+
         authorRepository.save(savedAuthor); // 50라인에서 예외가 터지면 kim씨로 저장이 안된다.
 
         return savedAuthor;
@@ -80,4 +90,26 @@ public class AuthorService {
 
         return author;
     }
+
+    @Transactional
+    public void authorDelete(Long id) {
+        Author author = authorRepository.findById(id).orElseThrow(()->new EntityNotFoundException("회원을 찾을 수 없습니다."));
+        authorRepository.delete(author);
+    }
+
+    @Transactional
+    public void authorUpdate(Long id, AuthorUpdateReqDto authorUpdateReqDto){
+
+        Author author = authorRepository.findById(id).orElseThrow(()->new EntityNotFoundException("회원을 찾을 수 없습니다."));
+        author.updateAuthor(authorUpdateReqDto);
+        //        authorUpdateReqDto.toEntity(author);
+
+        // jpa 가 특정 엔티티의 변경을 자동으로 인지하고 변경사항을 DB 에 반영하는 것이 dirty checking
+        // 회원 가입은 "추가" . 변경이 아님 ! => 더티 체킹 불가.
+        // readOnly 가 아니어도 더티체킹 시 @Transactional 꼭 붙어있어야 함. (maybe...?) // 나 readOnly 잘 모름 ㅠ 어노테이션 책 읽고 싶다..
+        // 기존 코드를 주석처리하고 test. 리턴 타입도 void 로 변경 (기존 Author)
+//        Author updatedResult = authorRepository.save(author);
+//        return updatedResult;
+    }
+
 }

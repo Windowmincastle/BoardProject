@@ -1,62 +1,70 @@
 package com.beyond.board.post.domain;
+
 import com.beyond.board.author.domain.Author;
-import com.beyond.board.author.dto.AuthorListResDto;
-import com.beyond.board.common.BaseTimeEntity;
-import com.beyond.board.post.dto.PostDetailDto;
+import com.beyond.board.post.dto.PostDetResDto;
 import com.beyond.board.post.dto.PostListResDto;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import com.beyond.board.post.dto.PostUpdateReqDto;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Builder
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
 @Entity
-public class Post extends BaseTimeEntity {
-
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(length = 50, nullable = false)
     private String title;
-    @Column(length = 3000, nullable = false)
+
+    @Column(length = 3000)
     private String contents;
-    @ManyToOne
-    @JoinColumn(name="author_id")
+
+    // 연관 관계의 주인은 FK 가 있는 Post.
+    @ManyToOne(fetch = FetchType.LAZY) //참조 안 하면 안 나가게.
+    @JoinColumn(name = "author_id")
     private Author author;
 
-    public PostListResDto fromEntity(){
-        PostListResDto postListResDto = PostListResDto.builder()
-                .id(this.id)
-                .title(this.title)
-                .author_email(this.author.getEmail())//여기 한번 체크해야함
-                .build();
+    @CreationTimestamp
+    private LocalDateTime createdTime;
+    @UpdateTimestamp
+    private LocalDateTime updateTime;
 
-        return postListResDto;
-    }
+    private String appointment;
+    private LocalDateTime appointmentTime; //String으로 받아서 형변환
 
-    public PostListResDto listFromEntity(){
+
+    public PostListResDto listFromEntity() {
         return PostListResDto.builder()
                 .id(this.id)
                 .title(this.title)
-                .author_email(this.author.getEmail())
+                .author_email(author.getEmail())
                 .build();
     }
 
-    public PostDetailDto detFromEntity(){
-
-        return PostDetailDto.builder()
+    public PostDetResDto detFromEntity(){
+        return PostDetResDto.builder()
                 .id(this.id)
                 .title(this.title)
                 .contents(this.contents)
-                .createdTime(this.getCreatedTime()) // baseentity로 상속하고 사용하려고 햇는데 오류가 생김
-                .updatedTime(this.getUpdateTime()) // getter로 대체하라고 나온다 private이기 때문에 직접 접근이 불가능하다.
-                .build();                      // 그래서 getter로 접근하라고 나오는 것 같다. 근데 추상클래스로 바꾸면 된다
+                .author_email(this.author.getEmail())
+                .createdTime(this.getCreatedTime())
+                .updatedTime(this.getUpdateTime())
+                .build();
     }
 
+    public void updatePost(PostUpdateReqDto postUpdateReqDto) {
+        this.title = postUpdateReqDto.getTitle();
+        this.contents = postUpdateReqDto.getContents();
+    }
+
+    public void updateAppointment(String yn) {
+        this.appointment = yn;
+    }
 }

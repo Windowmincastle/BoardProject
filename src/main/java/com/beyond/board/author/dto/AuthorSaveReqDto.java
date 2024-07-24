@@ -6,6 +6,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
+import java.util.ArrayList;
 
 @Data
 @AllArgsConstructor
@@ -19,19 +23,35 @@ public class AuthorSaveReqDto {
     // 사용자가 String으로 요청해도 Role 클래스로 자동 형변환이 잘 되더라
     private Role role;
 
-    //  객체 -> Entity로 toEntity 보내서 저장하기.
-    public Author toEntity(){
+
+//    안되는 것 같아서 주석처리햇음
+//    //필드 주입 방식으로
+//    @Autowired //엔티티에서 DI가 되는건가?라고 찾아보며 수업햇음
+//    //bean을 주입받으려면 bean에다가만 할수있다는 것 같다.
+//    private PasswordEncoder passwordEncoder;
+
+//    //  객체 -> Entity로 toEntity 보내서 저장하기.
+    // 암호화된 패스워드 받겟다고 매개변수 추가.
+    public Author toEntity(String encodedPassword){
         // SaveReqDto 객체로 요청받은 데이터를 author 객체에 담아서 DB에 저장해야겟지?
         // 그러니까 여기서 조립을 해야해
-
         Author author = Author.builder()
-                .password(this.password)
+                .password(encodedPassword)
                 .name(this.name)
                 .email(this.email)
+                .posts(new ArrayList<>())
                 .role(this.role).build();
 
         return author;
     }
+
+//    public Author toEntity(){
+//        Author author = Author.builder().password(this.password).name(this.name)
+//                .email(this.email).role(this.role)
+//                .posts(new ArrayList<>())
+//                .build();
+//        return author;
+//    }
 
 
 

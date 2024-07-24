@@ -27,16 +27,14 @@ public class AuthorDetailDto extends BaseTimeEntity {
 
     // 프론트엔드 개발자한테 알아서 해라 , 이렇게 써도 되고 무방하고, Author 클래스에
     // 선언해서 사용해도 무방하다.
-    public AuthorDetailDto fromEntity(Author author) {
-        return AuthorDetailDto.builder()
+    public AuthorDetailDto fromEntity(Author author){
+        AuthorDetailDto authorDetailDto = AuthorDetailDto.builder()
                 .id(author.getId())
-                .name(author.getName())
-                .email(author.getEmail())
-                .password(author.getPassword())
-                .role(author.getRole())
-                .postCounts(author.getPosts().size())
-                .createdTime(author.getCreatedTime())
+                .name(author.getName()).email(author.getEmail())
+                .password(author.getPassword()).createdTime(author.getCreatedTime())
+                .role(author.getRole()).postCounts(author.getPosts().size())
                 .build();
+        return authorDetailDto;
     }
 
 }
